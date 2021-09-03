@@ -1,11 +1,16 @@
-package Shapes;
+package ShapesAbstract;
 
-public class Circle extends Constructor {
+public class Circle implements Shape{
 
-	int radius = 20;
-
-	void area()
+	int r;
+	
+	public void in()
 	{
-	System.out.println(" The area of Circle of radius " + radius + " = " + 3.142f*radius*radius);
+		r=5;
+	}
+	
+	public void area()
+	{
+	System.out.println(" The area of Circle of radius " + r + " = " + 3.142f*r*r);
 	}
 }

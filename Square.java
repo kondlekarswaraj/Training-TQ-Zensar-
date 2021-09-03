@@ -1,11 +1,16 @@
-package Shapes;
+package ShapesAbstract;
 
-public class Square extends Constructor{
+public class Square implements Shape {
 
-	int side = 10;
+	int s;
 
-	void area()
+	public void in()
 	{
-	System.out.println(" The area of Square of side " + side + " = " + side*side);
+		s=5;
+	}
+	
+	public void area()
+	{
+	System.out.println(" The area of Square of side " + s + " = " + s*s);
 	}
 }
